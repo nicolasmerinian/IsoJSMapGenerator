@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Iso JS</title>
+		<link rel = 'stylesheet' type = 'text/css' href = 'css/style.css' />
+	</head>
+	<body> 
+		<div id = 'container'>
+			<canvas id = 'canvasElement' width = '1000' height = '800' onContextMenu = 'return false;'>
+				<!-- Message affiché si canvas n'est pas supporté par le navigateur -->
+				Votre navigateur ne gère pas les canvas.
+				Changez-le ou mettez-le à jour.
+			</canvas>	
+			<br />
+			<div id = "canvasloader-container" class = "wrapper"></div>
+			<br />
+			<span>Click on the map the redraw it </span>
+			<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+			<span>Zoom: shift key + mouse wheel</span>
+			<br />
+			<br />
+			<div>
+				<label for = 'minimap'>Minimap</label>
+				<input type = 'checkbox' id = 'minimap' checked />
+			</div>
+			<div>
+				<label for = 'water'>Water</label>
+				<input type = 'checkbox' id = 'water' checked />
+			</div>
+			<div>
+				<label for = 'canvasWidth'>canvas width</label>
+				<input type = 'text' id = 'canvasWidth' />
+			</div>
+			<div>
+				<label for = 'canvasHeight'>canvas height</label>
+				<input type = 'text' id = 'canvasHeight' />
+			</div>
+			<div>
+				<label for = 'mapSize'>map size</label>
+				<input type = 'text' id = 'mapSize' />
+			</div>
+			<div>
+				<label for = 'skyAltitude'>sky altitude</label>
+				<input type = 'text' id = 'skyAltitude' />
+			</div>
+			<div>
+				<label for = 'treeNumber'>tree number</label>
+				<input type = 'text' id = 'treeNumber' />
+			</div>
+			<div>
+				<label for = 'mountainNumber'>mountain number</label>
+				<input type = 'text' id = 'mountainNumber' />
+			</div>
+			<div>
+				<label for = 'mountainMinHeight'>mountain min height</label>
+				<input type = 'text' id = 'mountainMinHeight' />
+			</div>
+			<div>
+				<label for = 'mountainMaxHeight'>mountain max height</label>
+				<input type = 'text' id = 'mountainMaxHeight' />
+			</div>
+		</div>	
+		<script type = 'text/javascript' src = 'js/jquery.js'></script>
+		<script type = 'text/javascript' src = 'js/heartcode-canvasloader-min.js'></script>
+		<script type = 'text/javascript' src = 'js/GenMap.js'></script>
+		<script type = 'text/javascript' src = 'js/Level.js'></script>
+		<script type = 'text/javascript' src = 'js/Game.js'></script>
+		<script type = 'text/javascript' src = 'js/index.js'></script>
+		<script type = 'text/javascript' src = 'js/data.js'></script>
+	</body>
+</html>
